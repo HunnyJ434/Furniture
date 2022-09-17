@@ -1,0 +1,159 @@
+body{
+  font-family: 'Inter', sans-serif;
+}
+.navBar{
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding: 0 60px;
+}
+
+.hero{
+  display:flex;
+  justify-content: right;
+  align-items: center;
+  width: 100%;
+  height: 750px;
+  background: url("./Images/hero-image.png") center/cover;
+}
+
+.hero--div{
+  font-family: 'Inter', sans-serif;
+  background-color: rgb(230, 230, 253);
+  width:40%;
+  height: 50%;
+  border-radius: 10px;
+  padding: 30px;
+  margin-right: 60px;
+}
+
+.hero--arrival{
+  font-size: 1em;
+  font-weight: 500;
+  letter-spacing: 2.6px;
+}
+
+.hero--heading{
+  font-size: 3.5vw;
+  color: rgb(46, 63, 160);
+  padding-right: 150px;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.hero--text{
+  line-height: 35px;
+  font-size: 1.5vw;
+  font-weight: 500;
+}
+
+.hero--button{
+  background-color: rgb(46, 63, 160);
+  color: white;
+  font-weight: 600;
+  font-size: 1vw;
+  width: 17vw;
+  height: 4.5vw;
+  border-radius: 50px;
+  margin-top: 15px;
+}
+
+.services{
+  box-sizing: border-box;
+  width: 100%;
+  display:flex;
+  justify-content: space-between;
+  background-color: rgb(230, 230, 253);
+  padding: 1.2em 4em;
+}
+.services--item{
+  display:flex;
+  justify-content: space-around;
+  margin: 0 20px;
+}
+
+.service--img{
+  width: 70px;
+}
+.service--content{
+  margin-left: 20px;
+  display:flex;
+  flex-direction: column;
+}
+
+.content--heading{
+  font-size: 1.8vw;
+  margin: 0;
+  margin-top: 10px;
+  padding: 0;
+}
+
+.content--text{
+  font-size: 1vw;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 1000px) {
+  .services--item{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 20px;
+  }
+}
+.products{
+  font-family: 'Inter', sans-serif;
+  display: grid;
+  padding: 4% 10%;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.Items{
+  width: 250px;
+  margin: 20px 5px;
+}
+
+.item--description{
+  font-size: 11px;
+  font-weight: 400;
+  margin: 0px;
+}
+
+.item--price{
+  font-size: 14px;
+  font-weight: 400;
+  margin:5px 0;
+}
+
+.item--img{
+  width: 100%;
+}
+
+@media (max-width: 1150px) {
+  .products{
+    font-family: 'Inter', sans-serif;
+    display: grid;
+    padding: 4% 10%;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .products{
+    font-family: 'Inter', sans-serif;
+    display: grid;
+    padding: 4% 10%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .products{
+    font-family: 'Inter', sans-serif;
+    display: grid;
+    padding-left: 100px;
+    grid-template-columns: 1fr;
+  }
+}
+
