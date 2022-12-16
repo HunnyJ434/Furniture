@@ -2,10 +2,10 @@ import './App.css';
 import Nav from './Components/Nav'
 import Hero from "./Components/Hero"
 import Services from "./Components/Services"
-import { render } from '@testing-library/react';
+import React, { useEffect, useState } from 'react';
 function App() {
 
-  setTimeout(() => {
+  useEffect(() => {
     async function getData() {
       let url = 'https://fh-api-dev.herokuapp.com/api/products-service/products/website/CAD?page=0&limit=8';
       try {
@@ -32,7 +32,9 @@ function App() {
     })
   }
   renderData();
-  },1000)
+ 
+  },[]);
+   
  
   return (
     <div className="App">
