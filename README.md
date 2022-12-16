@@ -1,1 +1,1 @@
-# User-interface for a site selling furniture.
+# User-interface for a site selling furniture using ReactJs
